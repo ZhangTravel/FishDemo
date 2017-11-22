@@ -106,8 +106,7 @@ namespace BBSuper7
             GameUrl = config["运行参数", "游戏链接"];
             SessionId = config["运行参数", "游戏会话"];
 #endif
-            // if (BetCount >= 1 && BetCount <= 5 && LineBet >= 10 && LineBet <= 200)
-            BBSuper7 gameClient = new BBSuper7();
+           BBSuper7 gameClient = new BBSuper7();
             while (true)
             {
                 if (gameClient.ConnectStatus == false) gameClient.LoginGame();
