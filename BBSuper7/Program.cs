@@ -109,7 +109,6 @@ namespace BBSuper7
            BBSuper7 gameClient = new BBSuper7();
             while (true)
             {   
-
                 if (gameClient.ConnectStatus == false) gameClient.LoginGame();
                 Thread.Sleep(1000);
             }
